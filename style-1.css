@@ -1,0 +1,323 @@
+ @font-face {
+     font-family:"Raleway";
+     src:url("lib/fonts/raleway-regular.eot");
+     src:url("lib/fonts/raleway-regular.eot?#iefix") format("embedded-opentype"),
+     url("lib/fonts/raleway-regular.woff2") format("woff2"),
+     url("lib/fonts/raleway-regular.woff") format("woff"),
+     url("lib/fonts/raleway-regular.ttf") format("truetype"),
+     url("lib/fonts/raleway-regular.svg#raleway") format("svg");
+     font-style: normal;
+     font-weight: 400;
+}
+
+body, html {
+    height: 100%;
+}
+
+body {
+    overflow-x: hidden;
+    font-family:"Raleway";
+    color: #2d2d2d;
+    background: #f7f7f7;
+}
+
+::selection {
+    background: rgb(76, 2, 129);
+    color: white;
+}
+::-moz-selection {
+    background: rgb(76, 2, 129);
+    color: white;
+}
+.bg-white {
+    background: white;
+    padding: 2rem;
+}
+.btn-primary {
+    background: rgb(76, 2, 129);
+    border-color: rgb(76, 2, 129);
+}
+.btn-primary:hover {
+    background: transparent;
+    color: rgb(76, 2, 129);
+    border-color: rgb(76, 2, 129);
+}
+.btn-outline-primary {
+    background: transparent;
+    color: rgb(76, 2, 129);
+    border-color: rgb(76, 2, 129);
+}
+.btn-outline-primary:hover {
+    background: rgb(76, 2, 129);
+    border-color: rgb(76, 2, 129);
+}
+.btn-outline-light:hover {
+    color: rgb(76, 2, 129);
+}
+.text-primary {
+    color: rgb(76, 2, 129)!important;
+}
+
+
+/*==== Navigation ====*/
+.navbar {
+    text-transform: uppercase;
+    font-size: 12px;
+    background: rgba(0, 0, 0, 0.9)!important;
+    font-weight: 600;
+}
+.navbar-brand {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+a.navbar-brand:hover {
+    color: rgb(76, 2, 129)!important;
+}
+
+
+/*==== Landing section ====*/
+.intro-img {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("lib/img/bg.jpg");
+    height: 500px;
+    padding-top: 10rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    margin-bottom: 0;
+}
+.intro-caption {
+    text-align: center;
+    color: white;
+}
+.intro-caption h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+}
+.intro-caption p.lead {
+    font-size: 1.5rem;
+    animation-duration: 1.8s;
+    -webkit-animation-duration: 1.8s;
+}
+.intro-caption a.btn {
+    animation-delay: 1s;
+    animation-iteration-count:2;
+    -webkit-animation-delay: 1;
+    -webkit-animation-duration: 2;
+}
+
+
+/*==== Heading ====*/
+div.heading {
+    margin-bottom: 3rem;
+}
+.heading h3.title{
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.heading .subtitle {
+    color: #4e4e4e;
+}
+.heading .line {
+    width: 20%;
+    height: 4px;
+    background-color: rgb(76, 2, 129);
+    margin: 0 auto;
+}
+
+
+/*==== About ====*/
+#about .fa {
+    font-size: 1.5rem;
+    display: inline-block;
+    margin: 5px;
+}
+
+
+/*==== Service ====*/
+#service {
+    padding-top: 3rem;
+    padding-bottom: 3.5rem; 
+}
+
+.service-content .fa {
+    font-size: 3.5rem;
+    background: rgb(76, 2, 129);
+    color: white;
+    padding: 1.2rem;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0.8rem;
+}
+
+.service-content {
+    transition: all ease 0.5s;
+}
+
+.service-content:hover {
+    box-shadow: 1px 2px 3px 1px #a8a8a8;
+}
+
+
+/*==== Work ====*/
+#work {
+    margin: 0 auto;
+}
+#work .card {
+    width: 15rem;
+    height: 18rem;
+    display: inline-block;
+    margin: 0.5rem;
+}
+.card img {
+    width: 100%;
+    height: 12rem;
+}
+
+ul.nav-pills .nav-link {
+    color: rgb(76, 2, 129);
+}
+
+ul.nav-pills .nav-link.active, ul.nav-pills .nav-link:active {
+    background: rgb(76, 2, 129)!important;
+    color: white;
+}
+
+
+/*==== Team ====*/
+#team .card {
+    margin-bottom: 0.5rem;
+}
+#team .card p {
+    font-size: 0.6rem;
+    color: #a8a8a8;
+}
+#team .card i.fa:hover {
+    color: rgb(76, 2, 129);
+}
+
+
+/*==== Subscribe ====*/
+.subscribe {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("lib/img/outro-bg.jpg");
+    height: 80%;
+    color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    margin-bottom: 0;
+    z-index: -1;
+}
+.subscribe-text {
+    transform: translateY(85%);
+}
+.subscribe-text h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+.subscribe-text p.lead {
+    font-size: 1.5rem;
+}
+.subscribe form {
+    transform: translateX(35%);
+    display: inline;
+}
+
+
+/*==== Contact ====*/
+#contact {
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+}
+#contact address {
+    padding: 2rem;
+}
+#contact address p {
+    margin-bottom: 2rem;
+}
+
+#contact address .fa {
+    font-size: 1.5rem;
+    color: rgb(76, 2, 129);
+    margin-right: 0.5rem;
+}
+
+
+/*==== Footer ====*/
+footer {
+    background: #2d2d2d;
+    color: #f7f7f7;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+.footer hr.line {
+    background: #f7f7f7;
+    width: 45%;
+    float: left;
+    margin-top: 2px;
+}
+.footer p {
+    clear: left;
+}
+.footer .social .fa {
+    font-size: 20px;
+    margin: 0.5rem;
+    text-align: center;
+}
+.footer hr.divide {
+    background: #f7f7f7;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+footer .copyright {
+    margin-top: 3rem;
+}
+
+
+/*==== Media Queries ====*/
+
+@media (max-width:767px) {
+    .subscribe-text {
+        transform: translateY(75%);
+        padding-top: 2rem;
+    }
+    .subscribe-text h1 {
+        font-size: 2.25rem;
+        font-weight: bold;
+    }
+    .subscribe-text p.lead {
+        font-size: 1.2rem;
+    }
+}
+@media (max-width:991px) {
+    .subscribe-text {
+        transform: translateY(65%);
+    }
+    .subscribe-text h1 {
+        font-size: 2.35rem;
+        font-weight: bold;
+    }
+    .subscribe-text p.lead {
+        font-size: 1.2rem;
+    }
+}
+@media (min-width:992px) {
+    .subscribe-text {
+        transform: translateY(75%);
+    }
+    .subscribe-text h1 {
+        font-size: 2.4rem;
+        font-weight: bold;
+    }
+    .subscribe-text p.lead {
+        font-size: 1.35rem;
+    }
+    
+}
